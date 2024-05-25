@@ -59,7 +59,13 @@ function openOverview() {
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div class="flex flex-col p-3 rounded-md bg-[#282828]">
                 <div class="flex py-2 items-center">
-                    <div class="bg-green-500 rounded-sm w-5 h-5 mr-2"></div>
+                    <div style="
+                        background-color: #00d856;
+                        border-radius: 0.125rem;
+                        width: 1.25rem;
+                        height: 1.25rem;
+                        margin-right: .5rem;
+                    "></div>
                     <h1 class="font-bold">Month Paid</h1>
                 </div>
                 <p class="text-sm" style="text-align: left;">
