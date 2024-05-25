@@ -20,7 +20,7 @@ document.getElementById('fileInput').addEventListener('change', function (event)
 function openQR() {
     Swal.fire({
         title: "Duit Now QR",
-        imageUrl: "/public/asset/QR_White.png",
+        imageUrl: "asset/QR_White.png",
         confirmButtonText: "<i class='fa fa-file-arrow-down mr-2'></i>Download QR",
         showCancelButton: true,
         cancelButtonText: 'Done',
@@ -31,7 +31,7 @@ function openQR() {
     }).then((result) => {
         /* Read more about isConfirmed, isDenied below */
         if (result.isConfirmed) {
-            const imageUrl = '/public/asset/qr_img.jpeg';
+            const imageUrl = 'asset/qr_img.jpeg';
             s
             // Create an invisible link element
             const link = document.createElement('a');
