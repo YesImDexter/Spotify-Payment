@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Spotify Pay</title>
     <link rel="stylesheet" href="asset/output.css">
     <link rel="stylesheet" href="asset/main.css">
     <link rel="stylesheet" href="asset/styles.css">
@@ -27,7 +27,7 @@
                 loader.addEventListener("transitionend", () => {
                     loader.remove();
                 });
-            }, 1500); // Delay
+            },); // Delay
         });
     </script>
     <div class="loader-container">
@@ -93,7 +93,11 @@
             </div>
 
             <div>
-                <h1 class="header">Payment Overview</h1>
+                <div class="flex justify-between">
+                    <h1 class="header">Payment Overview</h1>
+                    <button onclick="openOverview()"
+                        class="p-2 px-3 bg-green-500 rounded-md fa fa-question font-bold hover:scale-105 ease-out duration-300"></button>
+                </div>
                 <div class="p-4 mt-2 bg-[#282828] rounded-md">
                     <div class="flex justify-center mb-3">
                         <div class="grid grid-cols-3">
@@ -175,7 +179,7 @@
                         <button onclick="openOverview()" class="flex items-center pt-3"><span class="text-sm">The
                                 numbers mason, what do
                                 they
-                                mean!?</span></button>
+                                mean!!? (clickable)</span></button>
                     </div>
                 </div>
             </div>
@@ -238,14 +242,22 @@
                             <p id="fileName">No File Attached</p>
                         </div>
                         <div class="flex justify-end col-span-1 items-center">
-                            <button
+                            <button onclick="sendPayment()"
                                 class="flex bg-green-600 rounded-md items-center h-full p-5 hover:scale-105 duration-300 ease-out"><i
                                     class="fa-solid fa-square-arrow-up-right"></i></button>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <div class="flex justify-end items-center mt-5">
+                <button onclick="openSecret()"
+                    class="py-2 px-3 bg-yellow-600 rounded-md font-bold hover:scale-105 ease-out duration-300"><i class="fa fa-gift mr-2"></i> Secret Button</button>
+            </div>
         </div>
+
+
+
 </body>
 
 <script src="asset/javascript.js"></script>

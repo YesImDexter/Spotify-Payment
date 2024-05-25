@@ -4,7 +4,13 @@ function copyBank() {
     navigator.clipboard.writeText("11112800202189");
 
     // Alert the copied text
-    Swal.fire("Copied To Clipboard!");
+    Swal.fire({
+        title: "Copied To Clipboard",
+        showCloseButton: true,
+        confirmButtonColor: '#2563eb',
+        timer: 2000
+    }
+    )
 }
 
 document.getElementById('attachBtn').addEventListener('click', function () {
@@ -20,6 +26,7 @@ document.getElementById('fileInput').addEventListener('change', function (event)
 function openQR() {
     Swal.fire({
         title: "Duit Now QR",
+        showCloseButton: true,
         imageUrl: "asset/QR_White.png",
         confirmButtonText: "<i class='fa fa-file-arrow-down mr-2'></i>Download QR",
         showCancelButton: true,
@@ -69,61 +76,101 @@ function openOverview() {
                     <h1 class="font-bold">Month Paid</h1>
                 </div>
                 <p class="text-sm" style="text-align: left;">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut
-                    labore et dolore magna aliqua.
+                    Months You have paid and has been verified. Thanks for paying.
                 </p>
             </div>
 
             <div class="flex flex-col p-3 rounded-md bg-[#282828]">
                 <div class="flex py-2 items-center">
-                    <div class="bg-red-600 rounded-sm w-5 h-5 mr-2"></div>
+                    <div style="
+                    background-color: #dc2626;
+                    border-radius: 0.125rem;
+                    width: 1.25rem;
+                    height: 1.25rem;
+                    margin-right: .5rem;
+                "></div>
                     <h1 class="font-bold">Month Due</h1>
                 </div>
                 <p class="text-sm" style="text-align: left;">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut
-                    labore et dolore magna aliqua.
+                    Months that is due to be payed. Please pay your taxes :3
                 </p>
             </div>
 
             <div class="flex flex-col p-3 rounded-md bg-[#282828]">
                 <div class="flex py-2 items-center">
-                    <div class="bg-blue-600 rounded-sm w-5 h-5 mr-2"></div>
+                    <div style="
+                    background-color: #2563eb;
+                    border-radius: 0.125rem;
+                    width: 1.25rem;
+                    height: 1.25rem;
+                    margin-right: .5rem;
+                "></div>
                     <h1 class="font-bold">Verifying</h1>
                 </div>
                 <p class="text-sm" style="text-align: left;">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut
-                    labore et dolore magna aliqua.
+                    Any proof of payment sent to be verified by me. Please wait as I verify em.
                 </p>
             </div>
 
             <div class="flex flex-col p-3 rounded-md bg-[#282828]">
                 <div class="flex py-2 items-center">
-                    <div class="outline outline-green-500 outline-2 rounded-sm w-5 h-5 mr-2"></div>
+                    <div style="
+                    outline: solid 2px #22c55e;
+                    border-radius: 0.125rem;
+                    width: 1.25rem;
+                    height: 1.25rem;
+                    margin-right: .5rem;
+                "></div>
                     <h1 class="font-bold">Current Month</h1>
                 </div>
                 <p class="text-sm" style="text-align: left;">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut
-                    labore et dolore magna aliqua.
+                    The current month, as simple as that.
                 </p>
             </div>
 
             <div class="flex flex-col p-3 rounded-md bg-[#282828]">
                 <div class="flex py-2 items-center">
-                    <div class="bg-yellow-400 rounded-sm w-5 h-5 mr-2"></div>
+                    <div style="
+                    background-color: #facc15;
+                    border-radius: 0.125rem;
+                    width: 1.25rem;
+                    height: 1.25rem;
+                    margin-right: .5rem;
+                "></div>
                     <h1 class="font-bold">Birthday Month!</h1>
                 </div>
                 <p class="text-sm" style="text-align: left;">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut
-                    labore et dolore magna aliqua.
+                    It's your special month, payment for that month is on me!.
+                    Frfr ong skibidi whatthesigma. (real) 
                 </p>
             </div>
         </div>
     </div>`,
+        confirmButtonColor: '#16a34a',
+        customClass: {
+            confirmButton: 'custom-confirm-button',
+            cancelButton: 'custom-cancel-button',
+        }
+    })
+}
+
+function sendPayment() {
+    Swal.fire({
+        icon: "success",
+        title: "File Sent For Verification",
+        text: "Thanks for paying your taxes",
+        showConfirmButton: false,
+        showCloseButton: true,
+        timer: 2000
+    });
+}
+
+function openSecret() {
+    Swal.fire({
+        confirmButtonText: "I got trolled by the oldest trick in the book",
+        html: `<video controls autoplay class="w-full h-full">
+        <source src="asset/hehe.mp4" type="video/mp4">
+      </video>`,
         confirmButtonColor: '#16a34a',
         customClass: {
             confirmButton: 'custom-confirm-button',
