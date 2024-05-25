@@ -224,14 +224,14 @@
             <div class="">
                 <h1 class="header">Submit Payment</h1>
                 <div class="p-4 mt-2 bg-[#282828] rounded-md">
-                    <div class="grid grid-cols-5 gap-3 py-2">
-                        <div class="flex flex-col col-span-2 gap-2">
+                    <div class="grid grid-col-2 gap-3 py-2">
+                        <div class="flex flex-col gap-2">
                             <h1 class="text-xs font-normal">Month To Be Payed</h1>
                             <input
                                 class="p-2 h-10 rounded-md outline outline-2 outline-gray-600 bg-transparent text-white"
                                 placeholder="1" type="number">
                         </div>
-                        <div class="flex flex-col col-span-2 gap-2">
+                        <div class="flex flex-col gap-2">
                             <h1 class="text-xs font-normal">Attach Payment File</h1>
                             <button id="attachBtn" onclick=""
                                 class="p-2 h-10 rounded-md outline outline-2 outline-gray-600 bg-gray-600 text-white text-sm"
@@ -241,10 +241,10 @@
                             <input id="fileInput" type="file" class="hidden" />
                             <p id="fileName">No File Attached</p>
                         </div>
-                        <div class="flex justify-end col-span-1 items-center">
+                        <div class="flex justify-center items-center">
                             <button onclick="sendPayment()"
-                                class="flex bg-green-600 rounded-md items-center h-full p-5 hover:scale-105 duration-300 ease-out"><i
-                                    class="fa-solid fa-square-arrow-up-right"></i></button>
+                                class="flex bg-green-600 rounded-md items-center justify-center w-full p-3 hover:scale-105 duration-300 ease-out"><i
+                                    class="fa-solid fa-square-arrow-up-right mr-2"></i>Submit Payment</button>
                         </div>
                     </div>
                 </div>

@@ -167,14 +167,30 @@ function sendPayment() {
 
 function openSecret() {
     Swal.fire({
-        confirmButtonText: "I got trolled by the oldest trick in the book",
-        html: `<video controls autoplay class="w-full h-full">
-        <source src="asset/hehe.mp4" type="video/mp4">
-      </video>`,
-        confirmButtonColor: '#16a34a',
-        customClass: {
-            confirmButton: 'custom-confirm-button',
-            cancelButton: 'custom-cancel-button',
+        title: "FistBump ?",
+        imageUrl: "asset/cat1.jpg",
+        showDenyButton: true,
+        showCancelButton: true,
+        confirmButtonText: "Fist Bump",
+        denyButtonText: `*Do Nothing`
+    }).then((result) => {
+        /* Read more about isConfirmed, isDenied below */
+        if (result.isConfirmed) {
+            Swal.fire({
+                imageUrl: "asset/cat3.jpg",
+                text: ":3",
+                showConfirmButton: false,
+                showCloseButton: true,
+                timer: 2000
+            });
+        } else if (result.isDenied) {
+            Swal.fire({
+                imageUrl: "asset/cat2.jpg",
+                text: ">:(",
+                showConfirmButton: false,
+                showCloseButton: true,
+                timer: 2000
+            });
         }
-    })
+    });
 }
