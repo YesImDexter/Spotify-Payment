@@ -7,7 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="output.css">
     <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="swal.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="/node_modules/@sweetalert2/theme-dark/dark.css" />
 
     <link
@@ -17,6 +17,23 @@
 </head>
 
 <body class="bg-[#3a3a3a] flex justify-center mx-2">
+
+    <script>
+        window.addEventListener("load", () => {
+            const loader = document.querySelector(".loader-container");
+
+            setTimeout(() => {
+                loader.classList.add("loader--hidden");
+                loader.addEventListener("transitionend", () => {
+                    loader.remove();
+                });
+            }, 1500); // Delay
+        });
+    </script>
+    <div class="loader-container">
+        <div class="loader"></div>
+    </div>
+
     <div class="container bg-[#1b1c20] text-white rounded-md my-5 p-5 max-w-xl">
         <div class="grid gap-4">
             <div class="p-4 mt-2 bg-[#282828] rounded-md overflow-hidden">

@@ -62,7 +62,7 @@ function openOverview() {
                     <div class="bg-green-500 rounded-sm w-5 h-5 mr-2"></div>
                     <h1 class="font-bold">Month Paid</h1>
                 </div>
-                <p class="text-sm">
+                <p class="text-sm" style="text-align: left;">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                     incididunt ut
                     labore et dolore magna aliqua.
@@ -74,7 +74,7 @@ function openOverview() {
                     <div class="bg-red-600 rounded-sm w-5 h-5 mr-2"></div>
                     <h1 class="font-bold">Month Due</h1>
                 </div>
-                <p class="text-sm">
+                <p class="text-sm" style="text-align: left;">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                     incididunt ut
                     labore et dolore magna aliqua.
@@ -86,7 +86,7 @@ function openOverview() {
                     <div class="bg-blue-600 rounded-sm w-5 h-5 mr-2"></div>
                     <h1 class="font-bold">Verifying</h1>
                 </div>
-                <p class="text-sm">
+                <p class="text-sm" style="text-align: left;">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                     incididunt ut
                     labore et dolore magna aliqua.
@@ -98,7 +98,7 @@ function openOverview() {
                     <div class="outline outline-green-500 outline-2 rounded-sm w-5 h-5 mr-2"></div>
                     <h1 class="font-bold">Current Month</h1>
                 </div>
-                <p class="text-sm">
+                <p class="text-sm" style="text-align: left;">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                     incididunt ut
                     labore et dolore magna aliqua.
@@ -110,7 +110,7 @@ function openOverview() {
                     <div class="bg-yellow-400 rounded-sm w-5 h-5 mr-2"></div>
                     <h1 class="font-bold">Birthday Month!</h1>
                 </div>
-                <p class="text-sm">
+                <p class="text-sm" style="text-align: left;">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                     incididunt ut
                     labore et dolore magna aliqua.
