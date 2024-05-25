@@ -1,0 +1,15 @@
+{
+  "version": "1.0.0",
+  "author": "Dexter Skudd",
+  "devDependencies": {
+    "tailwindcss": "^3.4.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx tailwindcss -i ./public/main.css -o ./public/output.css --watch"
+  },
+  "dependencies": {
+    "@sweetalert2/theme-dark": "^5.0.16",
+    "sweetalert2": "^11.11.0"
+  }
+}

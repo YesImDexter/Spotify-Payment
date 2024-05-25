@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="swal.css">
+    <link rel="stylesheet" href="/node_modules/@sweetalert2/theme-dark/dark.css" />
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body class="bg-[#3a3a3a] flex justify-center mx-2">
+    <div class="container bg-[#1b1c20] text-white rounded-md my-5 p-5 max-w-xl">
+        <div class="grid gap-4">
+            <div class="p-4 mt-2 bg-[#282828] rounded-md overflow-hidden">
+                <div class="grid grid-cols-2">
+                    <div class="">
+                        <div class="relative flex flex-row items-center  h-full">
+                            <img src="/public/asset/spotify.svg" class="absolute w-20 mr-5 p-3 z-10">
+                            <h1 class="font-bold text-sm text-white w-24 ml-20 z-10">Spotify Payment System</h1>
+                            <div class="absolute -top-16 -left-10 w-52 h-52  bg-[#00d856] rounded-full">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid grid-rows-2 items-center justify-end">
+                        <div class="flex justify-end">
+                            <p class="font-bold text-sm"><span class="text-sm font-normal mr-2">By</span>Dexter Skudd
+                            </p>
+                        </div>
+                        <a href="https://portfolio.dexterskudd.com/" target="_blank" class=" bg-[#00d856] rounded-md p-2 text-white font-bold hover:scale-105 duration-300
+                            ease-out">
+                            <i class="fa fa-code text-white mx-2 "></i>Portfolio
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h1 class="header">Dashboard</h1>
+                <div class="p-4 mt-2 bg-[#282828] rounded-md">
+                    <div class="grid grid-cols-3">
+                        <div class="flex flex-col gap-2 col-span-2 text-base">
+                            <div class="flex items-center">
+                                <h1 class="font-bold text-xl">Dexter Skudd</h1>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fa fa-birthday-cake mr-3"></i>
+                                <h1 class="font-normal">November</h1>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fa-solid fa-hourglass-start mr-3"></i>
+                                <h1 class="font-normal">1 Pending Verification</h1>
+                            </div>
+                        </div>
+                        <div class="col-span-1">
+                            <div class="grid gap-2 grid-rows-2-2">
+                                <div class="flex flex-col font-semibold text-sm text-nowrap items-end">
+                                    <h3>Months Overdue</h3>
+                                    <p class="font-normal">2 Months</p>
+                                </div>
+                                <div class="flex flex-col font-semibold text-sm text-nowrap items-end">
+                                    <h3>Payment Due</h3>
+                                    <p class="font-normal">RM 28.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h1 class="header">Payment Overview</h1>
+                <div class="p-4 mt-2 bg-[#282828] rounded-md">
+                    <div class="flex justify-center mb-3">
+                        <div class="grid grid-cols-3">
+                            <div class="flex justify-center items-center text-xl"><i class="fa fa-caret-left"></i></div>
+                            <div class="flex justify-center items-center">
+                                <h1 class="font-semibold text-lg">2024</h1>
+                            </div>
+                            <div class="flex justify-center items-center text-xl"><i class="fa fa-caret-right"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-[#1b1c20] px-3 py-4 rounded-md">
+                        <div class="grid gap-y-4 grid-cols-4 sm:grid-cols-5 md:grid-cols-6">
+                            <div class="month-box">
+                                <div class="month-num month-paid">
+                                    <span class="font-bold">1</span>
+                                </div>
+                            </div>
+                            <div class="month-box">
+                                <div class="month-num month-paid">
+                                    <span class="font-bold">2</span>
+                                </div>
+                            </div>
+                            <div class="month-box">
+                                <div class="month-num month-paid">
+                                    <span class="font-bold">3</span>
+                                </div>
+                            </div>
+                            <div class="month-box">
+                                <div class="month-num month-paid">
+                                    <span class="font-bold">4</span>
+                                </div>
+                            </div>
+                            <div class="month-box">
+                                <div class="month-num month-verify">
+                                    <span>5</span>
+                                </div>
+                            </div>
+                            <div class="month-box">
+                                <div class="month-num month-due">
+                                    <span>6</span>
+                                </div>
+                            </div>
+                            <div class="month-box">
+                                <div class="month-num month-current">
+                                    <span>7</span>
+                                </div>
+                            </div>
+                            <div class="month-box">
+                                <div class="month-num">
+                                    <span>8</span>
+                                </div>
+                            </div>
+                            <div class="month-box">
+                                <div class="month-num">
+                                    <span>9</span>
+                                </div>
+                            </div>
+                            <div class="month-box">
+                                <div class="month-num">
+                                    <span>10</span>
+                                </div>
+                            </div>
+                            <div class="month-box">
+                                <div class="month-num month-birthday">
+                                    <span>11</span>
+                                </div>
+                            </div>
+                            <div class="month-box">
+                                <div class="month-num">
+                                    <span>12</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-end">
+                        <button onclick="openOverview()" class="flex items-center pt-3"><span class="text-sm">The
+                                numbers mason, what do
+                                they
+                                mean!?</span></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="">
+                <h1 class="header">Make Payments</p>
+                    <div class="p-4 mt-2 bg-[#282828] rounded-md">
+                        <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 py-2">
+                            <div class="flex justify-center">
+                                <button onclick="copyBank()"
+                                    class="bg-blue-600 rounded-md flex justify-between w-full p-2 hover:scale-105 duration-300 ease-out cursor-pointer">
+                                    <div class="w-12 h-12 rounded-full bg-white col-span-1">
+                                        <img src="/public/asset/rhb.png" alt="">
+                                    </div>
+                                    <div class="flex items-center h-full col-span-3">
+                                        <div class="flex h-full items-center bg-[#282828] px-4 rounded-md"> <i
+                                                class="fa fa-copy items-center text-lg mr-2"></i>
+                                            <p class="font-normal text-sm">11112800202189</p>
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+
+                            <div class="flex justify-center">
+                                <button onclick="openQR()"
+                                    class="bg-pink-600 rounded-md flex justify-between w-full p-2 hover:scale-105 duration-300 ease-out cursor-pointer">
+                                    <div class="w-12 h-12 rounded-full bg-white col-span-1">
+                                        <img src="/public/asset/duitnow.png" alt="">
+                                    </div>
+                                    <div class="flex items-center h-full col-span-3">
+                                        <div class="flex h-full items-center bg-[#282828] px-4 rounded-md"> <i
+                                                class="fa fa-expand items-center text-lg mr-2"></i>
+                                            <p class="font-normal text-sm">Open QR Code</p>
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
+            <div class="">
+                <h1 class="header">Submit Payment</h1>
+                <div class="p-4 mt-2 bg-[#282828] rounded-md">
+                    <div class="grid grid-cols-5 gap-3 py-2">
+                        <div class="flex flex-col col-span-2 gap-2">
+                            <h1 class="text-xs font-normal">Month To Be Payed</h1>
+                            <input
+                                class="p-2 h-10 rounded-md outline outline-2 outline-gray-600 bg-transparent text-white"
+                                placeholder="1" type="number">
+                        </div>
+                        <div class="flex flex-col col-span-2 gap-2">
+                            <h1 class="text-xs font-normal">Attach Payment File</h1>
+                            <button id="attachBtn" onclick=""
+                                class="p-2 h-10 rounded-md outline outline-2 outline-gray-600 bg-gray-600 text-white text-sm"
+                                placeholder="1">
+                                <i class="fa fa-file mr-3 flex-wrap"></i>Upload File</button>
+
+                            <input id="fileInput" type="file" class="hidden" />
+                            <p id="fileName">No File Attached</p>
+                        </div>
+                        <div class="flex justify-end col-span-1 items-center">
+                            <button
+                                class="flex bg-green-600 rounded-md items-center h-full p-5 hover:scale-105 duration-300 ease-out"><i
+                                    class="fa-solid fa-square-arrow-up-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+<script src="/public/asset/javascript.js"></script>
+<script src="/node_modules/sweetalert2/dist/sweetalert2.min.js"></script>
+
+</html>

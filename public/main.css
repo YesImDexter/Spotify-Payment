@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    /* outline: 1px solid red; */
+    font-family: "Poppins", sans-serif;
+    color: #d0d1d4;
+}
+
+.header {
+    @apply text-lg font-bold;
+}
+
+.month-box {
+    @apply flex justify-center;
+}
+
+.month-box span {
+    @apply font-bold text-lg;
+}
+
+.month-num {
+    @apply flex justify-center items-center rounded-md h-12 w-12 hover:scale-110 duration-300 ease-out cursor-pointer;
+}
+
+.month-paid {
+    @apply bg-green-500;
+}
+
+.month-due {
+    @apply bg-red-600;
+}
+
+.month-verify {
+    @apply bg-blue-600;
+}
+
+.month-birthday {
+    @apply bg-yellow-500;
+}
+
+.month-current {
+    @apply outline outline-2 outline-green-600;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
