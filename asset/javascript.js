@@ -92,7 +92,7 @@ function openOverview() {
                     <h1 class="font-bold">Month Due</h1>
                 </div>
                 <p class="text-sm" style="text-align: left;">
-                    Months that is due to be payed. Please pay your taxes :3
+                    Months that is due to be payed. Please pay monthly subscription.
                 </p>
             </div>
 
@@ -141,7 +141,6 @@ function openOverview() {
                 </div>
                 <p class="text-sm" style="text-align: left;">
                     It's your special month, payment for that month is on me!.
-                    Frfr ong skibidi whatthesigma. (real) 
                 </p>
             </div>
         </div>
