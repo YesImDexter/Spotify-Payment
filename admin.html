@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Pay</title>
+    <link rel="stylesheet" href="asset/output.css">
+    <link rel="stylesheet" href="asset/main.css">
+    <link rel="stylesheet" href="asset/styles.css">
+    <link rel="stylesheet" href="node_modules/@sweetalert2/theme-dark/dark.css" />
+
+    <style>
+        .active {
+            background-color: #4a4a4a;
+        }
+    </style>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body class="bg-[#3a3a3a] flex justify-center">
+
+    <div class="container bg-[#1b1c20] w-full text-white rounded-md p-5">
+        <div class="grid gap-4 w-auto">
+            <div class="p-4 mt-2 bg-[#282828] rounded-md overflow-hidden">
+                <div class="grid grid-cols-2">
+                    <div class="">
+                        <div class="relative flex flex-row items-center  h-full">
+                            <img src="asset/spotify.svg" class="absolute w-20 mr-5 p-3 z-10">
+                            <h1 class="font-bold text-sm text-white w-24 ml-20 z-10">Spotify Payment System</h1>
+                            <div class="absolute -top-16 -left-10 w-52 h-52  bg-[#00d856] rounded-full">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-end">
+                        <div class="flex text-right">
+                            <p class="font-bold text-2xl">Admin Control Panel
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h1 class="header">Kontol Panel</h1>
+                <div class="p-4 mt-2 bg-[#282828] rounded-md">
+                    <div class="grid gap-4 grid-rows-[auto_1fr] md:grid-cols-[auto_1fr]">
+                        <div class="">
+                            <div class="flex flex-row md:flex-col items-center gap-4">
+                                <button data-content="dashboard"
+                                    class="flex justify-center md:justify-start w-full items-center bg-[#1b1c20] p-6 rounded-md">
+                                    <i class="fas fa-chart-line m-0 lg:mr-4"></i>
+                                    <h1 class="font-bold hidden lg:block">Dashboard</h1>
+                                </button>
+                                <button data-content="verification"
+                                    class="flex justify-center md:justify-start w-full items-center bg-[#1b1c20] p-6 rounded-md">
+                                    <i class="fa-solid fa-folder m-0 lg:mr-4"></i>
+                                    <h1 class="font-bold hidden lg:block">Validation</h1>
+                                </button>
+                                <button data-content="statistics"
+                                    class="flex justify-center md:justify-start w-full items-center bg-[#1b1c20] p-6 rounded-md">
+                                    <i class="fas fa-chart-bar m-0 lg:mr-4"></i>
+                                    <h1 class="font-bold hidden lg:block">Statistics</h1>
+                                </button>
+                                <button data-content="users"
+                                    class="flex justify-center md:justify-start w-full items-center bg-[#1b1c20] p-6 rounded-md">
+                                    <i class="fas fa-users m-0 lg:mr-4"></i>
+                                    <h1 class="font-bold hidden lg:block">Users</h1>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Content goes here -->
+                        <main class="flex flex-col gap-4">
+
+                            <!-- DASHBOARD -->
+                            <div id="dashboard" class="p-4 bg-[#1b1c20] rounded-md content">
+                                <h1 class="header mb-4">Payment Summary</h1>
+                                <table class="table-auto w-full">
+                                    <thead>
+                                        <tr class="text-left">
+                                            <th class="">User</th>
+                                            <th class="">Payment Summary</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <script></script>
+                                        <tr>
+                                            <td>Wiber</td>
+                                            <td class="flex lg:flex-row gap-4">
+                                                <div
+                                                    class="flex items-center py-2 px-4 bg-red-500 rounded-md font-bold">
+                                                    <i class="fas fa-chevron-down mr-3"></i>
+                                                    <span class="mr-2">RM</span>
+                                                    <span class="mr-2">1</span>
+                                                    <p class="hidden md:block">Overdue</p>
+                                                </div>
+                                                <div
+                                                    class="flex items-center py-2 px-4 bg-blue-600 rounded-md font-bold">
+                                                    <i class="fas fa-check-circle mr-3"></i>
+                                                    <span class="mr-2">1</span>
+                                                    <p class="hidden md:block">Verification</p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Johannes</td>
+                                            <td class="flex">
+                                                <div
+                                                    class="flex items-center py-2 px-4 bg-green-600 rounded-md font-bold">
+                                                    <i class="fas fa-chevron-up mr-3"></i>
+                                                    <span class="mr-2">RM</span>
+                                                    <span class="mr-2">1</span>
+                                                    <p class="hidden md:block">Prepaid</p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Johannes</td>
+                                            <td class="flex">
+                                                <div
+                                                    class="flex items-center py-2 px-4 bg-yellow-500 rounded-md font-bold">
+                                                    <i class="fas fa-thumbs-up mr-3"></i>
+                                                    <p class="">Settled</p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <!-- VERIFICATION -->
+                            <div id="verification" class="content hidden">
+                                <!-- First Table -->
+                                <div class="p-4 bg-[#1b1c20] rounded-md">
+                                    <h1 class="header mb-4">Verified Pending</h1>
+                                    <table class="table-auto w-full">
+                                        <thead>
+                                            <tr class="text-left">
+                                                <th class="">File</th>
+                                                <th class="">User</th>
+                                                <th class="">Summary</th>
+                                                <th class="">Date Added</th>
+                                                <th class="">Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="flex">
+                                                    <button
+                                                        class="flex items-center py-2 px-4 bg-blue-600 rounded-md font-bold">
+                                                        <i class="far fa-folder-open mr-3"></i>
+                                                        <p class="hidden md:block">payment_spotify.pdf</p>
+                                                    </button>
+                                                </td>
+                                                <td>Wiber</td>
+                                                <td>RM 20 due</td>
+                                                <td>23/6/2023</td>
+                                                <td class="flex justify-end gap-2">
+                                                    <button
+                                                        class="flex justify-center items-center py-2 px-4 bg-green-600 rounded-md font-bold">
+                                                        <i class="fas fa-check-circle"></i>
+                                                    </button>
+                                                    <button
+                                                        class="flex justify-center items-center py-2 px-4 bg-yellow-500 rounded-md font-bold">
+                                                        <i class="fas fa-pen"></i>
+                                                    </button>
+                                                    <button
+                                                        class="flex justify-center items-center py-2 px-4 bg-red-500 rounded-md font-bold">
+                                                        <i class="fas fa-trash"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <!-- Second Table -->
+                                <div class="p-4 bg-[#1b1c20] rounded-md mt-4">
+                                    <h1 class="header mb-4">History</h1>
+                                    <table class="table-auto w-full">
+                                        <thead>
+                                            <tr class="text-left">
+                                                <th class="">File</th>
+                                                <th class="">User</th>
+                                                <th class="">Result</th>
+                                                <th class="">Date Verified</th>
+                                                <th class="">Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="flex">
+                                                    <button
+                                                        class="flex items-center py-2 px-4 bg-blue-600 rounded-md font-bold">
+                                                        <i class="far fa-folder-open mr-3"></i>
+                                                        <p class="hidden md:block">rhb_12_32_29132.pdf</p>
+                                                    </button>
+                                                </td>
+                                                <td>Adam</td>
+                                                <td>Passed</td>
+                                                <td>23/6/2023</td>
+                                                <td class="flex justify-end gap-2">
+                                                    <button
+                                                        class="flex justify-center items-center py-2 px-4 bg-purple-600 rounded-md font-bold">
+                                                        <i class="fas fa-undo"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+
+                            <!-- STATISTICS -->
+                            <div id="statistics" class="p-4 bg-[#1b1c20] rounded-md hidden content">
+                                <!-- Your statistics content goes here -->
+                                <p>Statistics content goes here.</p>
+                            </div>
+
+                            <!-- USERS -->
+                            <div id="users" class="content">
+                                <!-- Your statistics content goes here -->
+                                <div class="p-4 bg-[#1b1c20] rounded-md">
+                                    <h1 class="header mb-4">User Database</h1>
+                                    <table class="table-auto w-full">
+                                        <thead>
+                                            <tr class="text-left">
+                                                <th class="">User</th>
+                                                <th class="">Birthday</th>
+                                                <th class="">Payment Summary</th>
+                                                <th class="">Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Adam</td>
+                                                <td>September</td>
+                                                <td>Overdue RM20</td>
+                                                <td class="flex justify-end gap-2">
+                                                    <button
+                                                        class="flex justify-center items-center py-2 px-4 bg-yellow-500 rounded-md font-bold">
+                                                        <i class="fas fa-pen"></i>
+                                                    </button>
+                                                    <button
+                                                        class="flex justify-center items-center py-2 px-4 bg-red-500 rounded-md font-bold">
+                                                        <i class="fas fa-trash"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </main>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+
+    // MENU CONTENT
+    document.addEventListener('DOMContentLoaded', () => {
+        const navButtons = document.querySelectorAll('.flex.flex-row button, .md\\:flex-col button');
+        const contentSections = document.querySelectorAll('.content');
+
+        navButtons.forEach(button => {
+            button.addEventListener('click', (event) => {
+                event.preventDefault();
+                const contentId = event.target.closest('button').getAttribute('data-content');
+
+                // Remove active class from all buttons
+                navButtons.forEach(btn => {
+                    btn.classList.remove('active');
+                });
+
+                // Add active class to the clicked button
+                event.target.closest('button').classList.add('active');
+
+                // Hide all content sections
+                contentSections.forEach(section => {
+                    section.classList.add('hidden');
+                });
+
+                // Show the selected content section
+                document.getElementById(contentId).classList.remove('hidden');
+            });
+        });
+    });
+</script>
+
+<script src="node_modules/sweetalert2/dist/sweetalert2.min.js"></script>
+
+</html>

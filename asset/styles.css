@@ -1,3 +1,9 @@
+* {
+    /* outline: 1px solid red; */
+    font-family: "Poppins", sans-serif;
+    color: #d0d1d4;
+}
+
 .loader-container {
     z-index: 20;
     position: fixed;

@@ -2,12 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-    /* outline: 1px solid red; */
-    font-family: "Poppins", sans-serif;
-    color: #d0d1d4;
-}
-
 .header {
     @apply text-lg font-bold;
 }
@@ -48,4 +42,17 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
+}
+
+table td,
+th {
+    @apply p-3;
+}
+
+table th {
+    @apply border-b-2 border-gray-500 pb-4;
+}
+
+.cp-header {
+    @apply text-2xl font-bold mb-2;
 }

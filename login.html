@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Pay</title>
+    <link rel="stylesheet" href="asset/output.css">
+    <link rel="stylesheet" href="asset/main.css">
+    <link rel="stylesheet" href="asset/styles.css">
+    <link rel="stylesheet" href="node_modules/@sweetalert2/theme-dark/dark.css" />
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body class="bg-[#3a3a3a] flex justify-center items-center h-full mt-10">
+    <div class="container bg-[#1b1c20] text-white rounded-md p-5 max-w-xl">
+        <div class="grid gap-4">
+            <div class="p-4 mt-2 bg-[#282828] rounded-md overflow-hidden">
+                <div class="grid grid-cols-2">
+                    <div class="">
+                        <div class="relative flex flex-row items-center h-full">
+                            <img src="asset/spotify.svg" class="absolute w-20 mr-5 p-3 z-10">
+                            <h1 class="font-bold text-sm text-white w-24 ml-20 z-10">Spotify Payment System</h1>
+                            <div class="absolute -top-16 -left-10 w-52 h-52  bg-[#00d856] rounded-full">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid grid-rows-2 items-center justify-end">
+                        <div class="flex justify-end">
+                            <p class="font-bold text-sm"><span class="text-sm font-normal mr-2">By</span>Dexter
+                                Skudd
+                            </p>
+                        </div>
+                        <a href="https://portfolio.dexterskudd.com/" target="_blank" class=" bg-[#00d856] rounded-md p-2 text-white font-bold hover:scale-105 duration-300
+                        ease-out">
+                            <i class="fa fa-code text-white mx-2 "></i>Portfolio
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h1 class="header">Login</h1>
+                <div class="p-4 mt-2 bg-[#282828] rounded-md">
+                    <div class="grid grid-cols-1 gap-4">
+                        <div class="flex flex-col gap-2">
+                            <h1 class="text-base font-normal" for="">Enter Name</h1>
+                            <div class="grid grid-cols-4 w-full">
+                                <input
+                                    class="flex col-span-3 p-2 h-10 rounded-l-md outline outline-2 outline-gray-600 bg-transparent text-white"
+                                    type="text">
+                                <button onclick="sendPayment()"
+                                    class="flex col-span-1  outline outline-2 outline-[#00d856] bg-[#00d856] rounded-r-md items-center justify-center text-white p-2"><i
+                                        class="fa-solid fa-square-arrow-up-right mr-2 text-white"></i>Login</button>
+                            </div>
+                        </div>
+                        <div class="p-4 mt-2 bg-red-500 rounded-md flex items-center">
+                            <i class="fa-solid fa-triangle-exclamation mr-4 text-white"></i>
+                            <h1 class="">
+                                Wrong Credentials
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<!-- <script src="asset/javascript.js"></script>
+<script src="node_modules/sweetalert2/dist/sweetalert2.min.js"></script> -->
+
+</html>
