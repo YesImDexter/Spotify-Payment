@@ -39,7 +39,7 @@ function openQR() {
         /* Read more about isConfirmed, isDenied below */
         if (result.isConfirmed) {
             const imageUrl = 'asset/qr_img.jpeg';
-            
+
             // Create an invisible link element
             const link = document.createElement('a');
             link.href = imageUrl;
